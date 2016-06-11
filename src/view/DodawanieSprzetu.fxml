@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DodawanieSprzetuController">
+   <children>
+      <VBox prefHeight="650.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="naprawyButton" layoutX="24.0" layoutY="13.0" mnemonicParsing="false" text="Naprawy" />
+      <Button fx:id="klienciButton" layoutX="107.0" layoutY="13.0" mnemonicParsing="false" text="Klienci" />
+      <Button fx:id="sprzetButton" layoutX="181.0" layoutY="13.0" mnemonicParsing="false" text="Sprzęt" />
+      <Button fx:id="wylogujButton" layoutX="833.0" layoutY="13.0" mnemonicParsing="false" text="Wyloguj" />
+      <Button fx:id="zakonczButton" layoutX="916.0" layoutY="13.0" mnemonicParsing="false" text="Zakończ" />
+      <Separator layoutY="51.0" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="1000.0" valignment="BASELINE" />
+   </children>
+</AnchorPane>
+      <AnchorPane prefHeight="650.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="sprzetContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="966.0">
+               <children>
+                  <Label layoutX="45.0" layoutY="139.0" text="Nazwa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nazwaTF" layoutX="144.0" layoutY="137.0" />
+                  <Button fx:id="dalejButton" layoutX="786.0" layoutY="291.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Dalej" onAction="#dodajSprzet"/>
+                  <Label layoutX="45.0" layoutY="178.0" text="Wartość">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="wartoscTF" layoutX="144.0" layoutY="176.0" />
+                  <Label layoutX="45.0" layoutY="286.0" text="S/N">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="snTF" layoutX="144.0" layoutY="287.0" />
+                  <Label layoutX="45.0" layoutY="424.0" text="Bateria">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="bateriaTF" layoutX="144.0" layoutY="422.0" />
+                  <Label layoutX="43.0" layoutY="213.0" text="Płyta główna">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="plytaTF"  layoutX="144.0" layoutY="211.0" />
+                  <Label layoutX="44.0" layoutY="332.0" text="Procesor">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="procesorTF"  layoutX="144.0" layoutY="330.0" />
+                  <Label layoutX="385.0" layoutY="422.0" text="Zasilacz">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="zasilaczTF" layoutX="481.0" layoutY="420.0" />
+                  <Label layoutX="43.0" layoutY="251.0" text="Stan">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="stanTF" layoutX="144.0" layoutY="249.0" />
+                  <Label layoutX="50.0" layoutY="521.0" text="Inne">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inneTF" layoutX="142.0" layoutY="521.0" prefHeight="77.0" prefWidth="422.0" />
+                  <Label layoutX="46.0" layoutY="376.0" text="Ilość RAM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ramTF"  layoutX="144.0" layoutY="373.0" />
+                  <Label layoutX="380.0" layoutY="176.0" text="Prod. Ram">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prodramTF"  layoutX="481.0" layoutY="174.0" />
+                  <Label layoutX="381.0" layoutY="284.0" text="Rozmiar HDD">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="rozmhddTF"  layoutX="481.0" layoutY="285.0" />
+                  <Label layoutX="379.0" layoutY="211.0" text="Typ RAM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ramtypTF"  layoutX="481.0" layoutY="209.0" />
+                  <Label layoutX="382.0" layoutY="330.0" text="Karta graf.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="grafikaTF" layoutX="481.0" layoutY="328.0" />
+                  <Label layoutX="381.0" layoutY="249.0" text="HDD">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hddTF"  layoutX="481.0" layoutY="247.0" />
+                  <Label layoutX="384.0" layoutY="373.0" text="Napęd">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="napedTF"  layoutX="481.0" layoutY="371.0" />
+                  <ComboBox layoutX="479.0" layoutY="135.0" prefWidth="150.0" />
+                  <Label layoutX="424.0" layoutY="138.0" text="Typ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="474.0" text="Magazyn">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox  layoutX="144.0" layoutY="472.0" prefWidth="150.0" />
+                  <Label layoutX="385.0" layoutY="472.0" text="Gwarancja">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gwarTF"  layoutX="481.0" layoutY="470.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TopMenuController">
+   <children>
+      <Button fx:id="naprawyButton" layoutX="24.0" layoutY="13.0" mnemonicParsing="false" text="Naprawy" />
+      <Button fx:id="klienciButton" layoutX="107.0" layoutY="13.0" mnemonicParsing="false"  text="Klienci" />
+      <Button fx:id="sprzetButton" layoutX="181.0" layoutY="13.0" mnemonicParsing="false"  text="Sprzęt" />
+      <Button fx:id="wylogujButton" layoutX="833.0" layoutY="13.0" mnemonicParsing="false"  text="Wyloguj" />
+      <Button fx:id="zakonczButton" layoutX="916.0" layoutY="13.0" mnemonicParsing="false"  text="Zakończ" />
+      <Separator layoutY="51.0" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="1000.0" valignment="BASELINE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Separator?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DodawanieNaprawyController">
+   <children>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Button fx:id="naprawyButton" layoutX="24.0" layoutY="13.0" mnemonicParsing="false" text="Naprawy" />
+      <Button fx:id="klienciButton" layoutX="107.0" layoutY="13.0" mnemonicParsing="false"  text="Klienci" />
+      <Button fx:id="sprzetButton" layoutX="181.0" layoutY="13.0" mnemonicParsing="false"  text="Sprzęt" />
+      <Button fx:id="wylogujButton" layoutX="833.0" layoutY="13.0" mnemonicParsing="false"  text="Wyloguj" />
+      <Button fx:id="zakonczButton" layoutX="916.0" layoutY="13.0" mnemonicParsing="false"  text="Zakończ" />
+      <Separator layoutY="51.0" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="1000.0" valignment="BASELINE" />
+   </children>
+</AnchorPane>
+      <AnchorPane prefHeight="599.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="55.0" layoutY="63.0" text="Data przyjęcia do serwisu:" />
+            <TextField layoutX="220.0" layoutY="59.0" />
+            <Label layoutX="55.0" layoutY="104.0" text="Przewidywana data naprawy:" />
+            <TextField layoutX="220.0" layoutY="100.0" />
+            <Label layoutX="55.0" layoutY="144.0" text="Typ naprawy:" />
+            <ChoiceBox layoutX="220.0" layoutY="140.0" prefWidth="150.0" />
+            <Label layoutX="55.0" layoutY="188.0" text="Przewidywany koszt naprawy:" />
+            <TextField layoutX="220.0" layoutY="184.0" />
+            <Label layoutX="55.0" layoutY="255.0" text="Opisz uszkodzenia:" />
+            <TextArea layoutX="220.0" layoutY="225.0" prefHeight="95.0" prefWidth="348.0" />
+            <Label layoutX="55.0" layoutY="373.0" text="Komentarz" />
+            <TextArea layoutX="220.0" layoutY="343.0" prefHeight="95.0" prefWidth="348.0" />
+            <Label layoutX="54.0" layoutY="471.0" text="Status" />
+            <ChoiceBox layoutX="219.0" layoutY="467.0" prefWidth="150.0" />
+            <Label layoutX="54.0" layoutY="505.0" text="Serwisant" />
+            <ChoiceBox layoutX="219.0" layoutY="501.0" prefWidth="150.0" />
+            <Button fx:id="dodajButton" layoutX="715.0" layoutY="489.0" mnemonicParsing="false" onAction="#dodajNaprawe" prefHeight="25.0" prefWidth="118.0" text="Dodaj" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
